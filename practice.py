@@ -34,3 +34,11 @@ output I lo
 # Slice string in the middle
 myString[2:6]
 output love
+
+# Catch all the string but jump "I love the mountains"
+myString[::2]
+output Ilv h onan
+
+# Reverse an string
+myString[::-1]
+output sniatnuom eht evol I
