@@ -83,3 +83,31 @@ output The result was 0.129
 name = 'Vero'
 print(f'Hi, my name is {name}')
 output Hi, my name is Vero
+
+# List (JS an array)
+
+another_list = [4, 5, "six"]
+my_list = ['one', 2, "three"]
+my_list[0] = 'one'
+new_list = my_list + another_list
+new_list = ['one', 2, 'three', 4, 5, 'six']
+
+# Add element at the end of the list
+new_list.append('seven')
+new_list = ['one', 2, 'three', 4, 5, 'six', 'seven']
+
+# Remove last element of the list
+new_list.pop()
+output 'seven'
+print(new_list) = ['one', 2, 'three', 4, 5, 'six']
+
+# Can save the item removed
+popped_item = new_list.pop()
+popped_item = "six"
+print(new_list) = ['one', 2, 'three', 4, 5]
+
+# Remove any item of the list with the index number
+new_list.pop(0)
+print(new_list) = [2, 'three', 4, 5]
+
+#
