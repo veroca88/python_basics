@@ -185,3 +185,29 @@ output 'Hello this is a text file\nthis is second line\n'
 myfile.seek(0)
 myfile.readlines()
 output['Hello this is a text file\n', 'this is second line\n']
+
+# file location
+pwd
+# after open() a file best practice is always close it
+myfile.close()
+
+# to avoid errors due open files and not close it we can use with
+# READ
+with open('myfile.txt') as new_file:
+    contents = new_file.read()
+
+    contents
+    output 'Hello this is a text file\nthis is second line\n'
+
+# Depends on the mode
+# r = read
+# w = write (OVERWRITE OR CREATE A NEW ONE)
+# a = append (ADD TO FILES)
+# r+ = reading and writing
+# w+ = writing and reading (OVERWRITE OR CREATE A NEW ONE)
+with open('myfile.txt', mode='r') as readfile:
+    contents_read = readfile.read()
+
+with open('myfile.txt', mode='w') as readfile:
+    contents_read = readfile.read()
+    output ERROR
