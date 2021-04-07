@@ -42,3 +42,44 @@ output Ilv h onan
 # Reverse an string
 myString[::-1]
 output sniatnuom eht evol I
+
+# Concatenation or multiplication between letters and numbers
+letter = 'z'
+letter * 10
+output 'zzzzzzzzzz'
+
+'2' + '3' = '23'
+2 + 3 = 5
+
+# Methods
+
+myString.upper()
+output 'I LOVE THE MOUNTAINS'
+
+myString.split()
+output['I', 'love', 'the', 'mountains']
+
+# format() method
+print("Here I'm using {} method".format("FORMAT"))
+output Here I'm using FORMAT method
+
+print("Python is {} {} {}".format("intuitive", "easy", "fast"))
+output Python is intuitive easy fast
+
+print("Python is {2} {1} {0}".format("intuitive", "easy", "fast"))
+output Python is fast easy intuitive
+
+print("Python is {f} {i} {e}".format(i="intuitive", e="easy", f="fast"))
+output Python is fast intuitive easy
+
+# Float formatting -> {value:width.precision f}
+result = 100/777
+output 0.1287001287001287
+# 3f means 3 decimals
+print("The result was {r:1.3f}".format(r=result))
+output The result was 0.129
+
+# f string
+name = 'Vero'
+print(f'Hi, my name is {name}')
+output Hi, my name is Vero
