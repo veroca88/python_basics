@@ -134,3 +134,15 @@ output dict_keys(['apple', 'orange', 'milk'])
 
 prices_lookup.items()
 output dict_items([('apple', 2.99), ('orange', {'normal': 1.99, 'organic': 3.99}), ('milk', 5.8)])
+
+# Tuples are immutables and uses ( ) cares about data integrity
+tuple_list = (1, 2, 3)
+number_list = [1, 2, 3]
+type(tuple_list) = tuple
+type(number_list) = list
+
+number_list[0] = "One"
+output['One', 2, 3]
+
+tuple_list[0] = "One"
+output ERROR
