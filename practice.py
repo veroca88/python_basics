@@ -146,3 +146,21 @@ output['One', 2, 3]
 
 tuple_list[0] = "One"
 output ERROR
+
+# Tuples has only two methods
+count() Returns the number of times a specified value occurs in a tuple
+index() Searches the tuple for a specified value and returns the position of where it was found
+
+# Sets only acepts uniques values
+myset = set()
+myset.add(2)
+output {2}
+myset.add(1)
+output {1, 2}
+# Return unique values in the list
+mylist = [1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 4]
+set(mylist)
+output {1, 2, 3, 4}
+
+set([1, 1, 2, 3])
+output {1, 2, 3}
