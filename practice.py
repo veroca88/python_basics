@@ -110,4 +110,12 @@ print(new_list) = ['one', 2, 'three', 4, 5]
 new_list.pop(0)
 print(new_list) = [2, 'three', 4, 5]
 
-#
+# Sort Method
+list_vowels = ['u', 'o', 'i', 'e', 'a']
+list_vowels.sort()
+output['a', 'e', 'i', 'o', 'u']
+
+#  Reverse Method
+list_vowels.reverse()
+output
+['u', 'o', 'i', 'e', 'a']
