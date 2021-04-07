@@ -164,3 +164,24 @@ output {1, 2, 3, 4}
 
 set([1, 1, 2, 3])
 output {1, 2, 3}
+
+# Create a .txt file from Jupiter-notebook
+% % writefile myfile.txt
+Hello this is a text file
+this is second line
+
+myfile = open('myfile.txt')
+myfile.read()
+output 'Hello this is a text file\nthis is second line\n'
+
+myfile.read()
+output ''
+#  it looks like empty file but we need to put the cursor at the begining of the file
+
+myfile.seek(0)
+myfile.read()
+output 'Hello this is a text file\nthis is second line\n'
+
+myfile.seek(0)
+myfile.readlines()
+output['Hello this is a text file\n', 'this is second line\n']
