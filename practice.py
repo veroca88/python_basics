@@ -119,3 +119,18 @@ output['a', 'e', 'i', 'o', 'u']
 list_vowels.reverse()
 output
 ['u', 'o', 'i', 'e', 'a']
+
+#  Dicctionaries (JS object)
+prices_lookup = {'apple': 2.99, 'orange': {
+    'normal': 1.99, 'organic': 3.99}, 'milk': 5.80}
+prices_lookup['apple'] = 2.99
+prices_lookup['orange']['organic'] = 3.99
+
+prices_lookup.values()
+output dict_values([2.99, {'normal': 1.99, 'organic': 3.99}, 5.8])
+
+prices_lookup.keys()
+output dict_keys(['apple', 'orange', 'milk'])
+
+prices_lookup.items()
+output dict_items([('apple', 2.99), ('orange', {'normal': 1.99, 'organic': 3.99}), ('milk', 5.8)])
