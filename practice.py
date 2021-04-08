@@ -230,3 +230,21 @@ with open('myfile.txt', mode='r') as readfile:
 "h" == "h" or "i" == "j" = True
 not (1 == 1) = False
 1 != 1 = False
+
+# If elif else Statements-> Control flow
+
+if some_condition:
+    # execute some code
+elif some_other_condition:
+    # do something different
+else:
+    # do something else
+
+animal = 'cat'
+
+if animal == 'dog':
+    print("Wuau wuau")
+elif animal == 'cat':
+    print('Miauuu')
+else:
+    print("no animal")
