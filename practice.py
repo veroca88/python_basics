@@ -221,3 +221,12 @@ with open('myfile.txt', mode='r') as readfile:
     output 'Hello this is a text file
     this is second line
     Check this new line'
+
+#  Chaining Comparison Operators
+
+1 < 2 < 3 = True
+1 < 2 and 2 > 3 = False
+1 == 1 or 2 == 2 = True
+"h" == "h" or "i" == "j" = True
+not (1 == 1) = False
+1 != 1 = False
