@@ -211,3 +211,13 @@ with open('myfile.txt', mode='r') as readfile:
 with open('myfile.txt', mode='w') as readfile:
     contents_read = readfile.read()
     output ERROR
+
+# WRITE
+with open('myfile.txt', mode='w') as readfile:
+    readfile.write("Check this new line")
+
+with open('myfile.txt', mode='r') as readfile:
+    print(readfile.read())
+    output 'Hello this is a text file
+    this is second line
+    Check this new line'

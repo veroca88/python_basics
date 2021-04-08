@@ -1,2 +1,3 @@
 Hello this is a text file
 this is second line
+Check this new line
