@@ -321,3 +321,26 @@ output
 1
 2
 3
+
+# While loop
+# break: breaks out the current closest enclosing loop.
+# continue: goes to the top of the closest enclosing loop.
+# pass: does nothing at all
+
+mystring = 'Sammy'
+for letter in mystring:
+    if letter == 'a':
+        continue
+    print(letter)
+output
+S
+m
+m
+y
+
+for letter in mystring:
+    if letter == 'a':
+        break
+    print(letter)
+output
+S
