@@ -248,3 +248,76 @@ elif animal == 'cat':
     print('Miauuu')
 else:
     print("no animal")
+
+# For loops
+numbers_list = [1, 2, 3]
+for number in numbers_list:
+    print(number)
+output
+1
+2
+3
+
+for number in numbers_list:
+    if number % 2 == 0:
+        print(number)
+    else:
+        print(f'Odd number {number}')
+output
+Odd number 1
+2
+Odd number 3
+
+for number in numbers_list:
+    list_sum = list_sum + number
+    print(list_sum)
+output
+1
+3
+6
+
+for letter in 'Hello World':
+    print(letter)
+output
+H
+e
+l
+l
+o
+
+W
+o
+r
+l
+d
+
+groupLetters = [(1, 'a', 2), (3, 'b', 4), (5, 'c', 6), (7, 'd', 8)]
+for a, b, c in groupLetters:
+    print(b)
+output
+a
+b
+c
+d
+
+objectKeyValue = {'k1': 1, 'k2': 2, 'k3': 3}
+for item in objectKeyValue:
+    print(item)
+output
+k1
+k2
+k3
+
+for item in objectKeyValue.items():
+    print(item)
+output
+('k1', 1)
+('k2', 2)
+('k3', 3)
+
+for key, value in objectKeyValue.items():
+    print(value)
+output
+1
+2
+3
