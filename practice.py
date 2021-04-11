@@ -367,7 +367,7 @@ list(range(-2, 11, 2))
 output
 [-2, 0, 2, 4, 6, 8, 10]
 
-# Enumerate
+# Enumerate function
 
 index_count = 0
 for letter in 'abcde':
@@ -414,3 +414,21 @@ output
 2 c
 3 d
 4 e
+
+# Zip function
+# work with the length of the shortest list
+
+mylistbig = [1, 2, 3, 4, 5, 6]
+mylistofthree1 = ['a', 'b', 'c']
+mylistofthree2 = [100, 200, 300]
+
+for item in zip(mylistbig, mylistofthree1, mylistofthree2):
+    print(item)
+output
+(1, 'a', 100)
+(2, 'b', 200)
+(3, 'c', 300)
+
+list(zip(mylistbig, mylistofthree1, mylistofthree2))
+output
+[(1, 'a', 100), (2, 'b', 200), (3, 'c', 300)]
