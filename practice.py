@@ -1,4 +1,6 @@
 # To print anything use print
+from randomm import randint
+from random import shuffle
 print('hello world')
 
 # Python uses Dynamic Typing (JS, C++ is statically-typed)
@@ -445,3 +447,23 @@ d = {'nykeys2': 456}
 456 in d.values()
 output
 True
+
+# Min and max keywords and random library
+listOfNumbers = [10, 3, -9, 20, 14]
+min(listOfNumbers) = -9
+max(listOfNumbers) = 20
+
+# import functions from a library
+
+# Suffle()
+lookingRandomNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+shuffle(lookingRandomNumber)
+lookingRandomNumber
+output
+[9, 4, 1, 8, 2, 3, 6, 10, 7, 5]
+
+# Ramdom Integer randint()
+randint(0, 100)
+output
+61
+# each time we run the functin output is different
