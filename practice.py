@@ -432,3 +432,16 @@ output
 list(zip(mylistbig, mylistofthree1, mylistofthree2))
 output
 [(1, 'a', 100), (2, 'b', 200), (3, 'c', 300)]
+
+# in operator, if an element is on the list
+'x' in [2, 3, 4] = False
+'x' in ['a', ['x', 'y'], 'z'] = False
+'x' in ['a', 'x', 'z'] = True
+'a' in 'a world' = True
+'mykey' in {'mykey': 123} = True
+
+# in operator, if a key o value is in a dictionary
+d = {'nykeys2': 456}
+456 in d.values()
+output
+True
