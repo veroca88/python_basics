@@ -467,3 +467,18 @@ randint(0, 100)
 output
 61
 # each time we run the functin output is different
+
+# Input function input()
+# Always accept anything and pass it as string
+result = input('Enter a number here: ')
+print(result) = 89
+type(result) = str
+
+# Always accept anything and pass it as string
+# to transform it into another data type
+float(result) = 89.0
+int(result) = 89
+
+# A fast way to transform our input
+response = int(input('What is your favorite number: '))
+type(response) = int
