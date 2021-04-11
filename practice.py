@@ -344,3 +344,25 @@ for letter in mystring:
     print(letter)
 output
 S
+
+# Useful operators
+
+ascendingNumbers = [1, 2, 3, 4]
+for number in range(-2, 11, 2):
+    # start in -2,
+    # goes to 11 but it does not include,
+    # jump each 2
+    print(number)
+output
+-2
+0
+2
+4
+6
+8
+10
+
+# To put all those numbers inside a list
+list(range(-2, 11, 2))
+output
+[-2, 0, 2, 4, 6, 8, 10]
