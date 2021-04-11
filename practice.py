@@ -366,3 +366,51 @@ output
 list(range(-2, 11, 2))
 output
 [-2, 0, 2, 4, 6, 8, 10]
+
+# Enumerate
+
+index_count = 0
+for letter in 'abcde':
+    print('At index {} the letter is {}'.format(index_count, letter))
+    index_count = index_count + 1
+output
+At index 0 the letter is a
+At index 1 the letter is b
+At index 2 the letter is c
+At index 3 the letter is d
+At index 4 the letter is e
+
+index_count = 0
+word = 'abcde'
+for letter in word:
+    print word[index_count]
+    index_count += 1
+output
+a
+b
+c
+d
+e
+
+# If we use enumerate() we are going to receive tuples
+
+word = 'abcde'
+
+for item in enumerate(word):
+    print(item)
+output
+(0, 'a')
+(1, 'b')
+(2, 'c')
+(3, 'd')
+(4, 'e')
+
+for index, letter in enumerate(word):
+    print(index, letter)
+    print('\n')
+output
+0 a
+1 b
+2 c
+3 d
+4 e
