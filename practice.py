@@ -482,3 +482,36 @@ int(result) = 89
 # A fast way to transform our input
 response = int(input('What is your favorite number: '))
 type(response) = int
+
+# List comprehensions
+
+# USING FOR LOOP AND APPEND()
+# more code same computation
+
+myMessage = 'Call me'
+myMessageList = []
+
+for letter in myMessage:
+    myMessageList.append(letter)
+myMessageList
+output
+['C', 'a', 'l', 'l', ' ', 'm', 'e']
+
+# a unique way of quickly creating a list with python
+# USING LIST COMPREHENSIONS
+
+myFastMessage = [letter for letter in myMessage]
+myFastMessage
+output
+['C', 'a', 'l', 'l', ' ', 'm', 'e']
+
+myFastNumberList = [num for num in range(1, 15)]
+myFastNumberList
+output
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+# Square numbers
+mySquareList = [num**2 for num in range(2, 7) if num % 2 == 0]
+mySquareList
+output
+[4, 16, 36]
