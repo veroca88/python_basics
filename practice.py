@@ -555,3 +555,25 @@ said_hello_function('Vero')
 
 output
 Hello
+
+# Create a function that checks if a number is even or not
+
+
+def even_check(number):
+    return number % 2 == 0
+
+
+even_check(7)
+
+# Return True if any number inside a list is even
+
+
+def check_in_list(list):
+    for num in list
+       if num % 2 == 0:
+            return True
+        else:
+            return False
+
+
+check_in_list([1, 3, 5, 7])
