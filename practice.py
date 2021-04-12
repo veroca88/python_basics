@@ -538,3 +538,20 @@ Help on built-in function insert:
 
 insert(index, object, /) method of builtins.list instance
 Insert object before index.
+
+# Functions
+# def keyword means it is a function
+# you can use snake_case_all_lowercase to named the function
+
+
+def said_hello_function(name="Guest"):
+    '''
+    Example of the structure of function
+    '''
+    print(f'Hello {name}')
+
+
+said_hello_function('Vero')
+
+output
+Hello
