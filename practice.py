@@ -577,3 +577,34 @@ def check_in_list(list):
 
 
 check_in_list([1, 3, 5, 7])
+
+# Functions and Tuple Unpacking
+stockPrices = [('APPLE', 200), ('GOOGLE', 400), ('MCSFT', 100)]
+for item in stockPrices:
+    print(item)
+
+# Check the employee of month
+employees = [('ABBY', 100), ('ERICK', 200), ('VERO', 400)]
+
+def employee_check(work_hours):
+    current_max = 0
+    employee_month = ''
+
+    for employee, hours in work_hours:
+        if hours > current_max:
+            current_max = hours
+            employee_month = employee
+        else:
+            pass
+
+    return (employee_month, current_max)
+
+employee_check(employees)
+output
+('VERO', 400)
+
+# item = employee_check(employees)
+name, hours = employee_check(employees)
+name
+output
+'VERO'
