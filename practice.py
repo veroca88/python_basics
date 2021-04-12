@@ -515,3 +515,26 @@ mySquareList = [num**2 for num in range(2, 7) if num % 2 == 0]
 mySquareList
 output
 [4, 16, 36]
+
+# METHODS AND FUNCTIONS
+# Methods
+methodAppend = [1, 2, 3]
+methodAppend.append(4)
+methodAppend
+output
+[1, 2, 3, 4]
+
+methodPop = [1, 2, 3, 4]
+# pop the last item of the list and remove it
+methodPop.pop() = 4
+methodPop
+output
+[1, 2, 3]
+
+# Help function. Return documentation of that object
+help(my_list.insert)
+output
+Help on built-in function insert:
+
+insert(index, object, /) method of builtins.list instance
+Insert object before index.
