@@ -623,5 +623,12 @@ def lesser_of_two_evens(a, b):
         return max(a, b)
 
 
+# ANIMAL CRACKERS: Write a function takes a two-word string and returns 
+# True if both words begin with same letter
 
+def animal_crackers(twoWordString):  
+    eachWord = twoWordString.split()
+    if eachWord[0][0] == eachWord[1][0]:
+        return True
+    
 
