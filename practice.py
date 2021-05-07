@@ -628,7 +628,38 @@ def lesser_of_two_evens(a, b):
 
 def animal_crackers(twoWordString):  
     eachWord = twoWordString.split()
-    if eachWord[0][0] == eachWord[1][0]:
-        return True
+    return eachWord[0][0] == eachWord[1][0]
     
+# MAKES TWENTY: Given two integers, return True if the sum of the integers is 
+# 20 or if one of the integers is 20. If not, return False
+
+def makes_twenty(num1, num2):
+    if num1 == 20 or num2 == 20 or (num1 + num2) == 20:
+        return True
+    else:
+        False
+
+# OLD MACDONALD: Write a function that capitalizes the 
+# first and fourth letters of a name
+
+# OPTION 1
+def capitalized_letter(name):
+    out = []
+    for letter in range(len(name)):
+        if letter == 0 or letter == 3:
+            out.append(name[letter].upper())
+        else:
+            out.append(name[letter].lower())
+    
+    return ''.join(out)
+
+    # OPTION2
+    def capitalized_letter(name):
+        if len(name) > 3:
+            return name[:3].capitalize() + name[3:].capitalize()
+        else:
+            return "Name is too short"
+
+
+            
 
